@@ -97,13 +97,14 @@ class App extends React.Component {
       <React.Fragment>
         <h2 className="App p-3">Movies /-bip.so-/</h2>
         <div>
-
-          <YearPicker className="date-own form-control" onChange={handleChange} />
-          <SearchBox
-            className='m-searchBox'
-            onChangeHandler={onSearchChange}
-            handleChange={handleChange}
-            />
+          <div>
+            <SearchBox
+              className='m-searchBox'
+              onChangeHandler={onSearchChange}
+              handleChange={handleChange}
+              />
+            <YearPicker className="date-own form-control" onChange={handleChange} />
+          </div>
           <CardList
             movieList={filterMovieName}
             dateFilter={dateFilter}
